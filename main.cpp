@@ -4,7 +4,7 @@
 int main()
 {
     spaceship Proton(500, -10, -20); // Равнозамедленное врезание в планету
-    Proton.Model(10.3966, 55);
+    /*Proton.Model(10.3966, 55);
     spaceship Neutron(1000, -10, -30); // Разгоняется в планету, но время меньше, чем время полёта до планеты
     Neutron.Model(-5, 5);
     spaceship FlyingAway(1500, - 10, -20); // Корабль не долетает и разворачивается
@@ -62,5 +62,12 @@ int main()
 
     std::cout << "Расстояние: " << UserShip.distance() << '\n';
     std::cout << "Скорость: " << UserShip.velocity() << '\n';
-    std::cout << "Время: " << UserShip.time() << '\n' << '\n';
+    std::cout << "Время: " << UserShip.time() << '\n' << '\n';*/
+
+    for (int i = 0; i < 10; i++){
+        Proton.Model (10.4, i);
+        std::cout << Proton.distance()/50 << '\n';
+    };
+
+
 }
