@@ -67,26 +67,28 @@ int main()
     std::cout << "Время: " << UserShip.time() << '\n' << '\n';*/
 
     std::fstream out;
-//    out.open("/home/user/Projects/Spaceship/Moon.txt");
-//    spaceship Moon(500, -2, -40);
-//    for (int i = 0; i < 30; i++){
-//        Moon.Model (10, i/10.0);
-//        std::cout << Moon.distance() << '\n';
-//        out << Moon.distance() << '\n';
-//    };
-//    out.close();
+    out.open("/home/user/Projects/Spaceship/Moon.txt");
+    spaceship Moon(500, -2, -186.2);
+    for (int i = 0; i < 30; i++){
+        Moon.Model (15, 0.1);
+        std::cout << Moon.distance() << '\n';
+        out << Moon.distance() << '\n';
+        if(Moon.distance() == 0)
+            break;
+    };
+    out.close();
 
     for (int i = 0; i < 50; i++){
      std::cout << "=";
     }
     std::cout << '\n';
-/*3.46553333*/
+
     out.open("/home/user/Projects/Spaceship/Earth.txt");
-    spaceship Earth(500, -10, -168);
+    spaceship Earth(500, -10, -174.2);
     for (int i = 0; i < 30; i++){
-        Earth.Model(11, i/10.0);
+        Earth.Model(15, 0.1);
         std::cout << Earth.distance() << '\n';
-        std::cout << "Time to planet:   " <<Earth.time() <<  '\n';
+        out << Earth.distance() << '\n';
         if(Earth.distance() == 0)
             break;
     };
@@ -97,23 +99,30 @@ int main()
     }
     std::cout << '\n';
 
-
-    spaceship Mars(500, -4, -40);
+    out.open("/home/user/Projects/Spaceship/Mars.txt");
+    spaceship Mars(500, -4, -183.2);
     for (int i = 0; i < 30; i++){
-        Mars.Model (1.8, i);
+        Mars.Model (15, 0.1);
         std::cout << Mars.distance() << '\n';
+        out << Mars.distance() << '\n';
+        if(Mars.distance() == 0)
+            break;
     };
-
+    out.close();
 
     for (int i = 0; i < 50; i++){
      std::cout << "=";
     }
     std::cout << '\n';
 
-
-    spaceship Jupiter(500, -26, -40);
+    out.open("/home/user/Projects/Spaceship/Jupiter.txt");
+    spaceship Jupiter(500, -26, -150.2);
     for (int i = 0; i < 30; i++){
-        Jupiter.Model (1.8, i);
+        Jupiter.Model (15, 0.1);
         std::cout << Jupiter.distance() << '\n';
+        out << Jupiter.distance() << '\n';
+        if(Jupiter.distance() == 0)
+            break;
     };
+    out.close();
 }
