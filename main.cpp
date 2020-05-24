@@ -1,13 +1,15 @@
 #include <iostream>
 #include "spaceship.hpp"
+#include <fstream>
 
 int main()
 {
-    spaceship Proton(5000, -2, -20); // Равнозамедленное врезание в планету
-    /*Proton.Model(10.3966, 55);
+//    void DistanceOnTheChart(spaceship.distance(), spaceship.)
+    /*spaceship Proton(500, -10, -20); // Равнозамедленное врезание в планету
+    Proton.Model(10.3966, 55);
     spaceship Neutron(1000, -10, -30); // Разгоняется в планету, но время меньше, чем время полёта до планеты
     Neutron.Model(-5, 5);
-    spaceship FlyingAway(1500, - 10, -20); // Корабль не долетает и разворачивается
+    spaceship FlyingAway(1500, -10, -20); // Корабль не долетает и разворачивается
     FlyingAway.Model(11, 360);
     spaceship a(500, -10, -20); // Разворачивается на отрицательном значении осии X
     a.Model(10.1, 360);
@@ -64,14 +66,54 @@ int main()
     std::cout << "Скорость: " << UserShip.velocity() << '\n';
     std::cout << "Время: " << UserShip.time() << '\n' << '\n';*/
 
-//    for (int i = 0; i < 10; i++){
-//        Proton.Model (10.4, i);
-//        std::cout << Proton.distance()/50 << '\n';
+    std::fstream out;
+//    out.open("/home/user/Projects/Spaceship/Moon.txt");
+//    spaceship Moon(500, -2, -40);
+//    for (int i = 0; i < 30; i++){
+//        Moon.Model (10, i/10.0);
+//        std::cout << Moon.distance() << '\n';
+//        out << Moon.distance() << '\n';
 //    };
-    for (int i = 0; i < 30; i++){
-        Proton.Model (2.0298, i);
-        std::cout << Proton.distance() << '\n';
+//    out.close();
+
+    for (int i = 0; i < 50; i++){
+     std::cout << "=";
     }
+    std::cout << '\n';
+/*3.46553333*/
+    out.open("/home/user/Projects/Spaceship/Earth.txt");
+    spaceship Earth(500, -10, -168);
+    for (int i = 0; i < 30; i++){
+        Earth.Model(11, i/10.0);
+        std::cout << Earth.distance() << '\n';
+        std::cout << "Time to planet:   " <<Earth.time() <<  '\n';
+        if(Earth.distance() == 0)
+            break;
+    };
+    out.close();
+
+    for (int i = 0; i < 50; i++){
+     std::cout << "=";
+    }
+    std::cout << '\n';
 
 
+    spaceship Mars(500, -4, -40);
+    for (int i = 0; i < 30; i++){
+        Mars.Model (1.8, i);
+        std::cout << Mars.distance() << '\n';
+    };
+
+
+    for (int i = 0; i < 50; i++){
+     std::cout << "=";
+    }
+    std::cout << '\n';
+
+
+    spaceship Jupiter(500, -26, -40);
+    for (int i = 0; i < 30; i++){
+        Jupiter.Model (1.8, i);
+        std::cout << Jupiter.distance() << '\n';
+    };
 }

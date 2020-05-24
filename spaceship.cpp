@@ -5,6 +5,7 @@ double spaceship::Model(double a, double t)
 {
     const double timeToPlanet = (-V-std::sqrt(V*V-2*(a+G)*D))/(a+G);
     const double X = D + V*t + ((a+G)*t*t/2);
+    std::cout << "D: " << D << "  V:" << V << " a: " << a << " t:" << t << " G:" << G <<'\n';
     if (X>0)
     {
         D = X;
