@@ -67,8 +67,8 @@ int main()
     std::cout << "Время: " << UserShip.time() << '\n' << '\n';*/
 
     std::fstream out;
-    out.open("/home/user/Projects/Spaceship/Moon.txt");
-    spaceship Moon(500, -2, -186.2);
+    out.open("/home/user/Projects/Spaceship/MoonSame.txt");
+    spaceship Moon(500, -2, -174.2);  // скорость для мягкой посадки: -186.2
     for (int i = 0; i < 30; i++){
         Moon.Model (15, 0.1);
         std::cout << Moon.distance() << '\n';
@@ -83,8 +83,8 @@ int main()
     }
     std::cout << '\n';
 
-    out.open("/home/user/Projects/Spaceship/Earth.txt");
-    spaceship Earth(500, -10, -174.2);
+    out.open("/home/user/Projects/Spaceship/EarthSame.txt");
+    spaceship Earth(500, -10, -174.2); // скорость для мягкой посадки: -174.2
     for (int i = 0; i < 30; i++){
         Earth.Model(15, 0.1);
         std::cout << Earth.distance() << '\n';
@@ -99,8 +99,8 @@ int main()
     }
     std::cout << '\n';
 
-    out.open("/home/user/Projects/Spaceship/Mars.txt");
-    spaceship Mars(500, -4, -183.2);
+    out.open("/home/user/Projects/Spaceship/MarsSame.txt");
+    spaceship Mars(500, -4, -174.2); // скорость для мягкой посадки: -183.2
     for (int i = 0; i < 30; i++){
         Mars.Model (15, 0.1);
         std::cout << Mars.distance() << '\n';
@@ -115,8 +115,8 @@ int main()
     }
     std::cout << '\n';
 
-    out.open("/home/user/Projects/Spaceship/Jupiter.txt");
-    spaceship Jupiter(500, -26, -150.2);
+    out.open("/home/user/Projects/Spaceship/JupiterSame.txt");
+    spaceship Jupiter(500, -26, -174.2); // скорость для мягкой посадки: -150.2
     for (int i = 0; i < 30; i++){
         Jupiter.Model (15, 0.1);
         std::cout << Jupiter.distance() << '\n';
