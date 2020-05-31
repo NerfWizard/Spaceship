@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		783A1065247C61AF00E83D1C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 783A1064247C61AF00E83D1C /* main.cpp */; };
+		783A106D247C61EB00E83D1C /* spacheship.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 783A106B247C61EB00E83D1C /* spacheship.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		783A1061247C61AF00E83D1C /* Spaceship */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Spaceship; sourceTree = BUILT_PRODUCTS_DIR; };
 		783A1064247C61AF00E83D1C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		783A106B247C61EB00E83D1C /* spacheship.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = spacheship.cpp; sourceTree = "<group>"; };
+		783A106C247C61EB00E83D1C /* spacheship.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = spacheship.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				783A1064247C61AF00E83D1C /* main.cpp */,
+				783A106B247C61EB00E83D1C /* spacheship.cpp */,
+				783A106C247C61EB00E83D1C /* spacheship.hpp */,
 			);
 			path = Spaceship;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				783A1065247C61AF00E83D1C /* main.cpp in Sources */,
+				783A106D247C61EB00E83D1C /* spacheship.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
