@@ -68,11 +68,12 @@ int main()
 
     std::fstream out;
     out.open("/home/user/Projects/Spaceship/MoonSame.txt");
-    spaceship Moon(500, -2, -174.2);  // скорость для мягкой посадки: -186.2
-    for (int i = 0; i < 30; i++){
-        Moon.Model (15, 0.1);
-        std::cout << Moon.distance() << '\n';
-        out << Moon.distance() << '\n';
+    spaceship Moon(500, -2, -100);  // скорость для мягкой посадки: -186.2
+    std::cout << "Посадка на Луну:" << '\n';
+    for (int i = 0; i < 42; i++){
+        Moon.Model (20, 0.3);
+        std::cout << Moon.distance() << " м" << '\n';
+        out << Moon.distance() << ',' << '\n';
         if(Moon.distance() == 0)
             break;
     };
@@ -84,11 +85,12 @@ int main()
     std::cout << '\n';
 
     out.open("/home/user/Projects/Spaceship/EarthSame.txt");
-    spaceship Earth(500, -10, -174.2); // скорость для мягкой посадки: -174.2
-    for (int i = 0; i < 30; i++){
-        Earth.Model(15, 0.1);
-        std::cout << Earth.distance() << '\n';
-        out << Earth.distance() << '\n';
+    spaceship Earth(500, -10, -100); // скорость для мягкой посадки: -174.2
+    std::cout << "Посадка на Землю:" << '\n';
+    for (int i = 0; i < 42; i++){
+        Earth.Model(20, 0.3);
+        std::cout << Earth.distance() << " м" << '\n';
+        out << Earth.distance() << ',' << '\n';
         if(Earth.distance() == 0)
             break;
     };
@@ -100,11 +102,12 @@ int main()
     std::cout << '\n';
 
     out.open("/home/user/Projects/Spaceship/MarsSame.txt");
-    spaceship Mars(500, -4, -174.2); // скорость для мягкой посадки: -183.2
-    for (int i = 0; i < 30; i++){
-        Mars.Model (15, 0.1);
-        std::cout << Mars.distance() << '\n';
-        out << Mars.distance() << '\n';
+    spaceship Mars(500, -4, -100); // скорость для мягкой посадки: -183.2
+    std::cout << "Посадка на Марс:" << '\n';
+    for (int i = 0; i < 42; i++){
+        Mars.Model (20, 0.3);
+        std::cout << Mars.distance() << " м" << '\n';
+        out << Mars.distance() << ',' << '\n';
         if(Mars.distance() == 0)
             break;
     };
@@ -116,11 +119,12 @@ int main()
     std::cout << '\n';
 
     out.open("/home/user/Projects/Spaceship/JupiterSame.txt");
-    spaceship Jupiter(500, -26, -174.2); // скорость для мягкой посадки: -150.2
-    for (int i = 0; i < 30; i++){
-        Jupiter.Model (15, 0.1);
-        std::cout << Jupiter.distance() << '\n';
-        out << Jupiter.distance() << '\n';
+    spaceship Jupiter(500, -26, -100); // скорость для мягкой посадки: -150.2
+    std::cout << "Посадка на Юпитер:" << '\n';
+    for (int i = 0; i < 42; i++){
+        Jupiter.Model (20, 0.3);
+        std::cout << Jupiter.distance() << " м" << '\n';
+        out << Jupiter.distance() << ',' << '\n';
         if(Jupiter.distance() == 0)
             break;
     };
